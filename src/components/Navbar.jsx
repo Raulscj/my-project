@@ -1,36 +1,59 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { React, useState } from "react";
 
-const boton = document.querySelector('#btn_nav')
-const menu = document.querySelector('#menu')
-boton.addEventListener('click',()=>{
-  menu.classList.toggle('hidden')
-})
 export default function Navbar() {
+  const [menu, setMenu] = useState(true);
+  const toggleMenu = () => {
+    setMenu(!menu);
+    console.log(menu);
+  };
+
   return (
     <>
-      <nav className="w-28">
-        <button id='btn_nav' className="m-2 bg-gray-700 hover:bg-gray-900 text-white py-2 px-3 rounded-md lg:hidden">
-          <FontAwesomeIcon icon={faBars} />
-        </button>
-        <ul id="menu" className="bg-green-400 px-2 py-4">
-          <li>
-            <a className="uppercase text-xs" href=""> Inicio</a> 
-          </li>
-          <li>
-            <a className="uppercase text-xs" href="">¿Quienes somos?</a> 
-          </li>
-          <li>
-            <a className="uppercase text-xs" href="">Nuestros Clientes</a> 
-          </li>
-          <li>
-            <a className="uppercase text-xs" href="">Productos </a> 
-          </li>
-          <li>
-            <a className="uppercase text-xs" href="">Como comprar</a> 
-          </li>
-        </ul>
+      <button
+        id="btn_nav"
+        className=" m-2 bg-gray-700 hover:bg-gray-900 text-white py-2 px-3 rounded-md lg:hidden "
+        onClick={toggleMenu}
+      >
+        <FontAwesomeIcon icon={faBars} size="lg" />
+      </button>
+      <nav
+        id="menu"
+        className={`flex flex-col px-2 fixed w-28 bg-slate-500 text-center h-screen justify-around ${
+          menu ? "" : "hidden"
+        }`}
+      >
+        <a
+          className="w-full  uppercase text-xs hover:bg-slate-400 p-2 border-b-4 border-slate-400"
+          href=""
+        >
+          Inicio
+        </a>
+        <a
+          className="w-full  uppercase text-xs hover:bg-slate-400 p-2 border-b-4 border-slate-400"
+          href=""
+        >
+          ¿Quienes somos?
+        </a>
+        <a
+          className="w-full  uppercase text-xs hover:bg-slate-400 p-2 border-b-4 border-slate-400"
+          href=""
+        >
+          Nuestros Clientes
+        </a>
+        <a
+          className="w-full  uppercase text-xs hover:bg-slate-400 p-2 border-b-4 border-slate-400"
+          href=""
+        >
+          Productos{" "}
+        </a>
+        <a
+          className="w-full  uppercase text-xs hover:bg-slate-400 p-2 border-b-4 border-slate-400"
+          href=""
+        >
+          Como comprar
+        </a>
       </nav>
     </>
   );
