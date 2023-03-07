@@ -1,13 +1,12 @@
 import Header from "./components/Header";
-/* import Carousel from "./components/Carousel"; */
+import AppRoutes from "./routes/AppRoutes";
 function App() {
   return (
-    <>
-      <div className="text-center w-28">
-        <Header />
-      </div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <div className="flex flex-row bg-zinc-600 h-screen justify-between text-center">
+      {/* <Header className="text-center w-1/4 fixed" /> */}
+      {/* COMPONENTE A MOSTRAR */}
+      <AppRoutes />
+    </div>
   );
 }
 
