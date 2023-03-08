@@ -2,13 +2,33 @@ import React /* , { useState, useEffect } */ from "react";
 const clientes = [
   {
     id: 1,
-    path: "",
-    titulo: "Good",
+    path: "src\\assets\\multimedia\\Clientes\\1.png",
+    titulo: "Codina Eventos",
   },
   {
     id: 2,
-    path: "",
-    titulo: "Bad",
+    path: "src\\assets\\multimedia\\Clientes\\2.png",
+    titulo: "",
+  },
+  {
+    id: 3,
+    path: "src\\assets\\multimedia\\Clientes\\3.png",
+    titulo: "",
+  },
+  {
+    id: 4,
+    path: "src\\assets\\multimedia\\Clientes\\4.png",
+    titulo: "",
+  },
+  {
+    id: 5,
+    path: "src\\assets\\multimedia\\Clientes\\5.png",
+    titulo: "",
+  },
+  {
+    id: 6,
+    path: "src\\assets\\multimedia\\Clientes\\6.png",
+    titulo: "",
   },
 ];
 
