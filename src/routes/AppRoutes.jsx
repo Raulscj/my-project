@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import second from '../components/Navbar'
-import Carousel from "../components/Carousel";
+import Navbar from "../components/Navbar";
+import Header from "../components/Header";
+import Home from "../components/Home";
 import Aboutme from "../components/Aboutme";
 import Clients from "../components/Clients";
 import Products from "../components/Products";
@@ -11,12 +12,14 @@ export default function AppRoutes() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Navbar/>}>
-          <Route index element={<Carousel />} />
-          <Route exact path="/Aboutme" element={<Aboutme />} />
-          <Route exact path="/Clientes" element={<Clients />} />
-          <Route exact path="/Paquetes" element={<Products />} />
-          <Route exact path="/Reservacion" element={<Reserver />} />
+          <Route path="/" element={<Navbar />}>
+            <Route path="/" element={<Header />}>
+              <Route index element={<Home />} />
+              <Route exact path="/Aboutme" element={<Aboutme />} />
+              <Route exact path="/Clientes" element={<Clients />} />
+              <Route exact path="/Paquetes" element={<Products />} />
+              <Route exact path="/Reservacion" element={<Reserver />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
