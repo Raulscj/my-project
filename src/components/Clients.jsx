@@ -1,54 +1,84 @@
 import React /* , { useState, useEffect } */ from "react";
+import { v4 as uuidv4 } from "uuid";
 const clientes = [
   {
-    id: 1,
+    id: uuidv4(),
     path: "src\\assets\\multimedia\\Clientes\\1.png",
-    titulo: "Codina Eventos",
   },
   {
-    id: 2,
+    id: uuidv4(),
     path: "src\\assets\\multimedia\\Clientes\\2.png",
-    titulo: "",
   },
   {
-    id: 3,
+    id: uuidv4(),
     path: "src\\assets\\multimedia\\Clientes\\3.png",
-    titulo: "",
   },
   {
-    id: 4,
+    id: uuidv4(),
     path: "src\\assets\\multimedia\\Clientes\\4.png",
-    titulo: "",
   },
   {
-    id: 5,
+    id: uuidv4(),
     path: "src\\assets\\multimedia\\Clientes\\5.png",
-    titulo: "",
   },
   {
-    id: 6,
+    id: uuidv4(),
     path: "src\\assets\\multimedia\\Clientes\\6.png",
-    titulo: "",
+  },
+  {
+    id: uuidv4(),
+    path: "src\\assets\\multimedia\\Clientes\\7.png",
+  },
+  {
+    id: uuidv4(),
+    path: "src\\assets\\multimedia\\Clientes\\8.png",
+  },
+  {
+    id: uuidv4(),
+    path: "src\\assets\\multimedia\\Clientes\\9.png",
+  },
+  {
+    id: uuidv4(),
+    path: "src\\assets\\multimedia\\Clientes\\10.png",
+  },
+  {
+    id: uuidv4(),
+    path: "src\\assets\\multimedia\\Clientes\\11.png",
+  },
+  {
+    id: uuidv4(),
+    path: "src\\assets\\multimedia\\Clientes\\12.png",
+  },
+  {
+    id: uuidv4(),
+    path: "src\\assets\\multimedia\\Clientes\\13.png",
+  },
+  {
+    id: uuidv4(),
+    path: "src\\assets\\multimedia\\Clientes\\14.png",
+  },
+  {
+    id: uuidv4(),
+    path: "src\\assets\\multimedia\\Clientes\\15.png",
+  },
+  {
+    id: uuidv4(),
+    path: "src\\assets\\multimedia\\Clientes\\16.png",
   },
 ];
 
 export default function Clients() {
   return (
     <>
-      {clientes.map((cliente) => (
-        <div key={cliente.id} className="card small">
-          <div className="card">
-            <img
-              className="mainPic"
-              src={`${cliente.path}`}
-              alt={cliente.titulo}
-            />
-            <div className="contenidoCard">
-              <h3>{cliente.titulo}</h3>
+      <div className="flex">
+        {clientes.map((cliente) => (
+          <div key={cliente.id}>
+            <div>
+              <img src={`${cliente.path}`} />
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </>
   );
 }
