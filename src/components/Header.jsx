@@ -9,8 +9,11 @@ import { Link, Outlet } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="w-full h-20 opacity-40">
-      <header className="m-1 flex flex-row justify-between bg-white w-full h-20">
+    <div className="w-full h-20 min-h-screen ">
+      <header
+        id="header"
+        className="m-2 flex flex-row justify-between items-center  p-5 rounded-md h-20"
+      >
         <img
           className="w-10 h-14"
           src="src\assets\multimedia\Logo.png"

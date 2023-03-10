@@ -1,4 +1,5 @@
-import React /* , { useState, useEffect } */ from "react";
+import React from "react";
+import Cards from "./Cards";
 import { v4 as uuidv4 } from "uuid";
 const clientes = [
   {
@@ -70,13 +71,9 @@ const clientes = [
 export default function Clients() {
   return (
     <>
-      <div className="flex">
+      <div className="flex flex-col items-center justify-center gap-5 p-5">
         {clientes.map((cliente) => (
-          <div key={cliente.id}>
-            <div>
-              <img src={`${cliente.path}`} />
-            </div>
-          </div>
+          <Cards key={cliente.id}>{cliente.path}</Cards>
         ))}
       </div>
     </>
