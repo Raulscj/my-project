@@ -7,6 +7,7 @@ import Aboutme from "../components/Aboutme";
 import Clients from "../components/Clients";
 import Products from "../components/Products";
 import Reserver from "../components/Reserver";
+import NotFound from "../components/NotFound";
 export default function AppRoutes() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function AppRoutes() {
               <Route exact path="/Reservacion" element={<Reserver />} />
             </Route>
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>

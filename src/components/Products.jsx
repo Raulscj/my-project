@@ -23,10 +23,11 @@ export default function Products() {
     <>
       <div className="flex flex-col">
         <h1 className="text-center text-lg font-bold">Productos</h1>
-        <section className="flex flex-col items-center justify-center  p-5">
+        <section className="flex flex-col items-center justify-center gap-5 p-5">
           <div className="card">
-            <h3 className="text-sm">Morrales</h3>
+            <h3 className="text-lg">Morrales</h3>
             <img
+              className="rounded-xl"
               onMouseOver={() => handleHover(MorralesHover, setMorralesImage)}
               onMouseOut={() => handleHover(Morrales, setMorralesImage)}
               src={MorralesImage}
@@ -34,8 +35,9 @@ export default function Products() {
             />
           </div>
           <div className="card">
-            <h3 className="text-sm">Instrumentos Musicales</h3>
+            <h3 className="text-lg">Instrumentos Musicales</h3>
             <img
+              className="rounded-xl"
               onMouseOver={() =>
                 handleHover(InstrumentosHover, setInstrumentosImage)
               }
@@ -45,8 +47,9 @@ export default function Products() {
             />
           </div>
           <div className="card">
-            <h3 className="text-sm">Sonido</h3>
+            <h3 className="text-lg">Sonido</h3>
             <img
+              className="rounded-xl"
               onMouseOver={() => handleHover(SonidoHover, setSonidoImage)}
               onMouseOut={() => handleHover(Sonido, setSonidoImage)}
               src={SonidoImage}
@@ -54,8 +57,9 @@ export default function Products() {
             />
           </div>
           <div className="card">
-            <h3 className="text-sm">Uso Personal</h3>
+            <h3 className="text-lg">Uso Personal</h3>
             <img
+              className="rounded-xl"
               onMouseOver={() => handleHover(PersonalHover, setPersonalImage)}
               onMouseOut={() => handleHover(Personal, setPersonalImage)}
               src={PersonalImage}
@@ -63,8 +67,9 @@ export default function Products() {
             />
           </div>
           <div className="card">
-            <h3 className="text-sm">Uso Varios</h3>
+            <h3 className="text-lg">Uso Varios</h3>
             <img
+              className="rounded-xl"
               onMouseOver={() => handleHover(VariosHover, setVariosImage)}
               onMouseOut={() => handleHover(Varios, setVariosImage)}
               src={VariosImage}
