@@ -17,7 +17,7 @@ export default function Navbar() {
           className="absolute  bg-teal-800 hover:bg-gray-900 text-white py-1 px-2 rounded-md lg:hidden "
           onClick={toggleMenu}
         >
-          <FontAwesomeIcon icon={faBars} size="md" />
+          <FontAwesomeIcon icon={faBars} />
         </button>
         <nav
           id="menu"
