@@ -4,24 +4,24 @@ import { React, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 export default function Navbar() {
   const [menu, setMenu] = useState(true);
+  /* const [] */
   const toggleMenu = () => {
     setMenu(!menu);
-    console.log(menu);
   };
 
   return (
     <>
-      <div id="menu" className=" flex justify-center min-h-screen w-1/4">
+      <div className={`flex  h-screen w-1/4 ${menu ? "" : "fixed"}`}>
         <button
           id="btn_nav"
-          className="absolute bg-gray-700 hover:bg-gray-900 text-white py-2 px-3 rounded-md lg:hidden "
+          className="absolute  bg-teal-800 hover:bg-gray-900 text-white py-1 px-2 rounded-md lg:hidden "
           onClick={toggleMenu}
         >
-          <FontAwesomeIcon icon={faBars} size="lg" />
+          <FontAwesomeIcon icon={faBars} size="md" />
         </button>
         <nav
           id="menu"
-          className={`flex flex-col w-full px-2  text-center text-white h-screen justify-evenly ${
+          className={` flex flex-col w-full px-2  text-center text-white h-screen justify-evenly ${
             menu ? "" : "hidden"
           }`}
         >
@@ -42,7 +42,7 @@ export default function Navbar() {
           </Link>
           <Link to={"/Paquetes"}>
             <span className="w-full  uppercase text-xs hover:bg-slate-400 p-2">
-              Productos{" "}
+              Nuestros Productos
             </span>
           </Link>
           <Link to={"/Reservacion"}>

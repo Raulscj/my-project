@@ -3,13 +3,13 @@ import React from "react";
 export default function Aboutme() {
   /* const tamaño =  */
   return (
-    <div className="flex flex-col md:flex-row bg-gray-400 h-screen items-center justify-evenly">
+    <div className="flex flex-col md:flex-row   items-center justify-evenly">
       <img
-        className="md:w-1/2 w-40 "
+        className="md:w-1/2 w-36 rounded-sm"
         src="src\assets\multimedia\aboutme.jpg"
         alt="aqui va foto"
       />
-      <section className="md:w-1/2">
+      <section id="app" className="md:w-1/2">
         <h1 className="text-xs text-center m-1">¿Quienes somos?</h1>
         <p className="text-xs text-justify my-1 mx-3 leading-relaxed">
           Somos una empresa venezolana dedicada a la fabricación y distribución
