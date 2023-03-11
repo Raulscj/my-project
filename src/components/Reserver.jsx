@@ -1,10 +1,14 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import { faker } from "@faker-js/faker";
 
 export default function Reserver() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("0");
+  const nombre = faker.name.fullName();
+  const correo = faker.internet.email();
+  const numero = faker.phone.number("+###########");
+  const [name, setName] = useState(nombre);
+  const [email, setEmail] = useState(correo);
+  const [number, setNumber] = useState(numero);
 
   /* Modal config*/
   let [isOpen, setIsOpen] = useState(false);
@@ -20,10 +24,10 @@ export default function Reserver() {
   const handleSubmit = (e) => {
     e.preventDefault();
     openModal();
-    setName("");
-    setEmail("");
-    setNumber("");
     console.log(name, email, number);
+    setName(nombre);
+    setEmail(correo);
+    setNumber(numero);
   };
 
   return (
@@ -55,7 +59,7 @@ export default function Reserver() {
           className="text-xs p-2  mx-1 my-3"
           value={number}
           onChange={(e) => setNumber(e.target.value)}
-          type="number"
+          type="tel"
           placeholder="0416/0412/0414"
           id="Telefono"
           name="Telefono"
