@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className=" flex justify-center min-h-screen w-1/4">
+      <div id="menu" className=" flex justify-center min-h-screen w-1/4">
         <button
           id="btn_nav"
           className="absolute bg-gray-700 hover:bg-gray-900 text-white py-2 px-3 rounded-md lg:hidden "
@@ -26,29 +26,29 @@ export default function Navbar() {
           }`}
         >
           <Link to={"/"}>
-            <a className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
+            <span className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
               Inicio
-            </a>
+            </span>
           </Link>
           <Link to={"/Aboutme"}>
-            <a className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
+            <span className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
               ¿Quienes somos?
-            </a>
+            </span>
           </Link>
           <Link to={"/Clientes"}>
-            <a className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
+            <span className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
               Nuestros Clientes
-            </a>
+            </span>
           </Link>
           <Link to={"/Paquetes"}>
-            <a className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
+            <span className="w-full  uppercase text-xs hover:bg-slate-400 p-2">
               Productos{" "}
-            </a>
+            </span>
           </Link>
           <Link to={"/Reservacion"}>
-            <a className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
+            <span className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
               Quiero el mio
-            </a>
+            </span>
           </Link>
         </nav>
       </div>
