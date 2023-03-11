@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className={`flex  h-screen w-1/4 ${menu ? "" : "fixed"}`}>
         <button
           id="btn_nav"
-          className="absolute  bg-teal-800 hover:bg-gray-900 text-white py-1 px-2 rounded-md lg:hidden "
+          className="absolute bg-teal-800 hover:bg-gray-900 text-white py-1 px-2 rounded-md lg:hidden "
           onClick={toggleMenu}
         >
           <FontAwesomeIcon icon={faBars} />

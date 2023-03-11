@@ -12,11 +12,11 @@ export default function Reserver() {
   return (
     <>
       <form
-        className=" bg h-1/2 flex flex-col items-center"
+        className="bg-teal-800 flex flex-col items-center justify-center mx-3 p-2 mt-10 "
         onSubmit={handleSubmit}
       >
         <input
-          className=" p-4 m-2 w-1/2"
+          className="text-xs p-2 m-1"
           value={name}
           name="name"
           onChange={(e) => setName(e.target.value)}
@@ -25,7 +25,7 @@ export default function Reserver() {
           required
         />
         <input
-          className=" p-4 m-2 w-1/2"
+          className="text-xs p-2 m-1"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="email"
@@ -35,7 +35,7 @@ export default function Reserver() {
           required
         />
         <input
-          className=" p-4 m-2 w-1/2"
+          className="text-xs p-2 m-1"
           value={number}
           onChange={(e) => setNumber(e.target.value)}
           type="number"
@@ -44,7 +44,12 @@ export default function Reserver() {
           name="Telefono"
           required
         />
-        <button type="submit">Suscribirse</button>
+        <button
+          type="submit"
+          className="bg-blue-900 hover:bg-teal-900 p-2 rounded-xl text-xs"
+        >
+          Enviar
+        </button>
       </form>
     </>
   );

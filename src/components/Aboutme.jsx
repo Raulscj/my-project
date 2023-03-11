@@ -9,7 +9,7 @@ export default function Aboutme() {
         src="src\assets\multimedia\aboutme.jpg"
         alt="aqui va foto"
       />
-      <section id="app" className="md:w-1/2">
+      <section className="md:w-1/2">
         <h1 className="text-xs text-center m-1">¿Quienes somos?</h1>
         <p className="text-xs text-justify my-1 mx-3 leading-relaxed">
           Somos una empresa venezolana dedicada a la fabricación y distribución

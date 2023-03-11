@@ -21,9 +21,9 @@ export default function Products() {
   };
   return (
     <>
-      <div id="app" className="flex flex-col">
+      <div className="flex flex-col">
         <h1 className="text-center text-lg font-bold">Productos</h1>
-        <section className="flex flex-col items-center justify-center gap-5 p-5">
+        <section className="flex flex-col items-center justify-center  p-5">
           <div className="card">
             <h3 className="text-sm">Morrales</h3>
             <img
