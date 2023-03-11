@@ -21,16 +21,16 @@ export default function Carousel({
         {slides}
       </div>
       {/* BOTONES */}
-      <div className="absolute inset-0 flex items-center justify-between p-4">
+      <div className="absolute inset-0 flex items-end justify-between p-4">
         <button
           onClick={prev}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+          className="p-1 rounded-full shadow bg-white text-gray-800 hover:bg-sky-500"
         >
           <ChevronLeft size={20} />
         </button>
         <button
           onClick={next}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+          className="p-1 rounded-full shadow bg-white text-gray-800 hover:bg-sky-500"
         >
           <ChevronRight size={20} />
         </button>

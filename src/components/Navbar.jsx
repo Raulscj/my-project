@@ -26,28 +26,28 @@ export default function Navbar() {
           }`}
         >
           <Link to={"/"}>
-            <span className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
+            <span className="w-full  uppercase text-xs hover:bg-sky-900 p-2 ">
               Inicio
             </span>
           </Link>
           <Link to={"/Aboutme"}>
-            <span className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
+            <span className="w-full  uppercase text-xs hover:bg-sky-900 p-2 ">
               ¿Quienes somos?
             </span>
           </Link>
           <Link to={"/Clientes"}>
-            <span className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
+            <span className="w-full  uppercase text-xs hover:bg-sky-900 p-2 ">
               Nuestros Clientes
             </span>
           </Link>
           <Link to={"/Paquetes"}>
-            <span className="w-full  uppercase text-xs hover:bg-slate-400 p-2">
+            <span className="w-full  uppercase text-xs hover:bg-sky-900 p-2">
               Nuestros Productos
             </span>
           </Link>
           <Link to={"/Reservacion"}>
-            <span className="w-full  uppercase text-xs hover:bg-slate-400 p-2 ">
-              Quiero el mio
+            <span className="w-full  uppercase text-xs hover:bg-sky-900 p-2 ">
+              ¡Quiero el mio!
             </span>
           </Link>
         </nav>
